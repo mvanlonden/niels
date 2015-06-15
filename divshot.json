@@ -1,9 +1,19 @@
 {
-  "name": "markie",
+  "name": "nielsvanlonden",
   "root": "./app",
   "clean_urls": true,
   "cache_control": {},
   "routes": {
     "**": "index.html"
+  },
+  "forms": {
+    "contact": {
+      "to": "nielsvlonden@@gmail.com",
+      "from": "nielsvlonden@gmail.com",
+      "replyTo": "{{name}} <{{email}}>",
+      "subject": "Contact Received from {{name}}",
+      "html": "<b>Name:</b> {{name}}",
+      "text": "{{field}}"
+    }
   }
 }
